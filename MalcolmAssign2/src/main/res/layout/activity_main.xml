@@ -8,7 +8,7 @@
     tools:context=".MalcolmActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/malcolmTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="248dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/pizzaOptionRG"
         android:layout_width="176dp"
         android:layout_height="192dp"
         android:layout_marginStart="117dp"
@@ -43,26 +43,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/dominos"
+            android:id="@+id/dominosRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pizzaPlaceOption1"></RadioButton>
 
         <RadioButton
-            android:id="@+id/pizzahut"
+            android:id="@+id/pizzahutRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pizzaPlaceOption2"></RadioButton>
 
         <RadioButton
-            android:id="@+id/pizzapizza"
+            android:id="@+id/pizzapizzaRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pizzaPlaceOption3"></RadioButton>
     </RadioGroup>
 
     <ImageView
-        android:id="@+id/dominosImg"
+        android:id="@+id/dominosIV"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <ImageView
-        android:id="@+id/pizzahutImg"
+        android:id="@+id/pizzahutIV"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="330dp"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <ImageView
-        android:id="@+id/pizzapizzaImg"
+        android:id="@+id/pizzapizzaIV"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="380dp"
