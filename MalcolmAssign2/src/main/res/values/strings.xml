@@ -25,4 +25,7 @@
     <string name="mushroom">Mushroom</string>
     <string name="green_pepper">Green Pepper</string>
     <string name="onion">Onion</string>
+    <string name="help">Help</string>
+    <string name="malcolm">Malcolm</string>
+    <string name="pizza">Pizza</string>
 </resources>
