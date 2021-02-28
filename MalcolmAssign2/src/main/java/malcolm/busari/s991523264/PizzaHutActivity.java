@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -51,7 +52,26 @@ public class PizzaHutActivity extends AppCompatActivity {
                     showAlertDialog("No Options Selected", "Please select desired options for your pizza");
                 }
                 else{
+                    int selectedId1 = rG1.getCheckedRadioButtonId();
+                    RadioButton selectedRadioBtn1 = (RadioButton) findViewById(selectedId1);
+                    int selectedId2 = rG2.getCheckedRadioButtonId();
+                    RadioButton selectedRadioBtn2 = (RadioButton) findViewById(selectedId2);
+                    String rG1Value = selectedRadioBtn1.getText().toString();
+                    String rG2Value = selectedRadioBtn2.getText().toString();
+                    CheckBox[] checkBoxes = new CheckBox[]{cB1, cB2, cB3, cB4, cB5, cB6};
+                    String cBArray = "";
+
+                    for (int i=0; i<=6; i++)
+                    {
+                        if (checkBoxes[i].isChecked())
+                        {
+                            cBArray = checkBoxes[i].getText().toString();
+                        }
+                    }
                     Intent intent = new Intent(v.getContext(), PaymentActivity.class);
+                    intent.putExtra("radio_group1", rG1Value);
+                    intent.putExtra("radio_group2", rG2Value);
+                    intent.putExtra("check_box", cBArray);
                     startActivity(intent);
                 }
             }
