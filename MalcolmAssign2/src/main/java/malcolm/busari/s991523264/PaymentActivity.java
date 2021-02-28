@@ -113,18 +113,13 @@ public class PaymentActivity extends AppCompatActivity {
                 }
                 else{
                     String userName = name.getText().toString();
-                    String userEmail = email.getText().toString();
-                    String userCreditCard = creditCard.getText().toString();
                     String userPhone = phone.getText().toString();
                     String userStreet = street.getText().toString();
                     String userCity = city.getText().toString();
                     String userProvince = province.getSelectedItem().toString();
                     Intent intent = new Intent(v.getContext(), CheckOutActivity.class);
                     intent.putExtra("user_name", userName);
-                    intent.putExtra("user_email", userEmail);
-                    intent.putExtra("credit_card", userCreditCard);
                     intent.putExtra("street_address", userStreet);
-                    intent.putExtra("phone_number", userPhone);
                     intent.putExtra("city", userCity);
                     intent.putExtra("province", userProvince);
                     intent.putExtra("user_order", userOrder);

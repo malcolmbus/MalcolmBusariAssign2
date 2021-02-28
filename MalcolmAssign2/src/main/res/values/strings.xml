@@ -30,4 +30,8 @@
     <string name="pizza">Pizza</string>
     <string name="here_is_your_order">Here is your order:</string>
     <string name="order">Order</string>
+    <string name="checkout">Checkout</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="order_details">Order Details</string>
+    <string name="checkout">Checkout</string>
 </resources>
