@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -113,7 +114,6 @@ public class PaymentActivity extends AppCompatActivity {
                 }
                 else{
                     String userName = name.getText().toString();
-                    String userPhone = phone.getText().toString();
                     String userStreet = street.getText().toString();
                     String userCity = city.getText().toString();
                     String userProvince = province.getSelectedItem().toString();
@@ -127,5 +127,15 @@ public class PaymentActivity extends AppCompatActivity {
                 }
             }
         });
+
+        final ImageButton imageButton = findViewById(R.id.backIB);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MalcolmActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
     }

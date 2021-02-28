@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -76,6 +77,15 @@ public class DominosActivity extends AppCompatActivity {
                 }
         }
     });
+
+        final ImageButton imageButton = findViewById(R.id.backIB);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MalcolmActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void showAlertDialog(String title, String message){

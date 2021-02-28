@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class CheckOutActivity extends AppCompatActivity {
@@ -58,6 +59,15 @@ public class CheckOutActivity extends AppCompatActivity {
                         (dialog, id) -> dialog.cancel());
                 AlertDialog alert = builder.create();
                 alert.show();
+            }
+        });
+
+        final ImageButton imageButton = findViewById(R.id.backIB);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MalcolmActivity.class);
+                startActivity(intent);
             }
         });
     }

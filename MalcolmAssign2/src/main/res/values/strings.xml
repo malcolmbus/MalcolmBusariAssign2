@@ -33,5 +33,5 @@
     <string name="checkout">Checkout</string>
     <string name="delivery_address">Delivery Address</string>
     <string name="order_details">Order Details</string>
-    <string name="checkout">Checkout</string>
+    <string name="back_to_home_screen">Home Screen</string>
 </resources>
