@@ -29,4 +29,5 @@
     <string name="malcolm">Malcolm</string>
     <string name="pizza">Pizza</string>
     <string name="here_is_your_order">Here is your order:</string>
+    <string name="order">Order</string>
 </resources>
